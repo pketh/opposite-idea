@@ -1,0 +1,17 @@
+- S3_PATH = "https://frog-feels.s3.amazonaws.com"
+- url = "http://frogfeels.com"
+- description = "A place to draw feelings, and feel feelings."
+
+script(type='text/javascript').
+  var palettes = !{JSON.stringify(palettes)};
+
+doctype html
+html
+  include includes/head
+  body
+    include includes/header
+    include includes/about
+    include includes/draw
+    include includes/vote
+    include includes/footer
+    include includes/scripts
